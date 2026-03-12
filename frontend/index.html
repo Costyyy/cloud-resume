@@ -141,8 +141,23 @@
                 </div>
             </div>
         </section>
-
+        <footer>
+            <p class="visitor-count">
+                Views: <span id="visitor-count">-</span>
+            </p>
+        </footer>
     </div>
+    <script>
+        const API_URL = "https://wr163d4bvh.execute-api.eu-north-1.amazonaws.com/count";
 
+        fetch(API_URL)
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById("visitor-count").textContent = data.count;
+            })
+            .catch(() => {
+                document.getElementById("visitor-count").textContent = "-";
+            });
+    </script>
 </body>
 </html>
