@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #1a1a1a;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #004f90;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 860px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* page header with name and contact */
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #004f90;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+header p {
+    font-size: 13px;
+    color: #555;
+}
+
+/* section headings */
+h2 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #004f90;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1.5px solid #aac4e0;
+    padding-bottom: 0.2rem;
+    margin-top: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+
+/* each job/project block */
+.entry {
+    margin-bottom: 1rem;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0.25rem;
+}
+
+.entry-header span:last-child {
+    font-size: 12.5px;
+    color: #555;
+}
+
+ul {
+    margin: 0;
+    padding-left: 1.3rem;
+}
+
+ul li {
+    margin-bottom: 0.2rem;
+    line-height: 1.5;
+}
+
+/* stack line sits outside the bullet indent */
+.stack {
+    list-style: none;
+    margin-left: -1.3rem;
+    color: #555;
+    font-size: 12.5px;
+    margin-top: 0.2rem;
+}
+
+/* technologies section spacing */
+section p {
+    margin-bottom: 0.25rem;
+    line-height: 1.6;
+}
+
+footer {
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.6rem;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+}
+
+@media print {
+    body { background: white; }
+    .container { box-shadow: none; margin: 0; padding: 1.5rem 2rem; }
+    footer { display: none; }
+}
+
+@media (max-width: 600px) {
+    .container { padding: 1.2rem; }
+    .entry-header { flex-direction: column; }
+}
