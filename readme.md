@@ -1,1 +1,1 @@
-CloudFront distribution: d1nggs9h7gxhob.cloudfront.net
+CloudFront distribution: d2u6bf6755ez4c.cloudfront.net
