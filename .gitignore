@@ -1,6 +1,6 @@
 *.exe
 infra/.terraform
 *.zip
-*.hcl
+.terraform.lock.hcl
 *.tfstate
 *.backup
