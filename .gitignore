@@ -1,2 +1,6 @@
 *.exe
 infra/.terraform
+*.zip
+*.hcl
+*.tfstate
+*.backup
