@@ -123,8 +123,15 @@ li.stack strong { color: var(--text); font-size: 0.85rem; }
 .tech-label { color: var(--text); font-weight: 600; font-size: 0.9rem; }
 .tech-value { color: var(--text-dim); font-size: 0.9rem; }
 
-.cv-footer { text-align: center; margin-top: 3rem; color: var(--text-dim); font-size: 0.85rem; }
-.cv-footer #visitor-count { color: var(--accent); font-weight: 600; }
+.views {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+}
+.views #visitor-count {
+    color: var(--accent);
+    font-weight: 600;
+}
 
 /* projects layout */
 .projects-container {
