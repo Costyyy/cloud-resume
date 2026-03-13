@@ -4,3 +4,4 @@ infra/.terraform
 .terraform.lock.hcl
 *.tfstate
 *.backup
+*.pyc
