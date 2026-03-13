@@ -151,6 +151,7 @@ resource "aws_lambda_function" "visitor_counter" {
   runtime          = "python3.12"
   filename         = data.archive_file.lambda_zip.output_path
   source_code_hash = data.archive_file.lambda_zip.output_base64sha256
+  reserved_concurrent_executions = 5
 }
 
 # API Gateway
@@ -180,6 +181,11 @@ resource "aws_apigatewayv2_stage" "default" {
   api_id      = aws_apigatewayv2_api.visitor_counter.id
   name        = "$default"
   auto_deploy = true
+
+  default_route_settings {
+    throttling_rate_limit  = 10   # max requests per second
+    throttling_burst_limit = 50   # max burst
+  }
 }
 
 resource "aws_lambda_permission" "api_gateway" {
