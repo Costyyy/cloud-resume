@@ -124,9 +124,9 @@ li.stack strong { color: var(--text); font-size: 0.85rem; }
 .tech-value { color: var(--text-dim); font-size: 0.9rem; }
 
 .views {
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     color: var(--text-dim);
+    white-space: nowrap;
 }
 .views #visitor-count {
     color: var(--accent);
