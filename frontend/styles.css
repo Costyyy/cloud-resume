@@ -153,32 +153,6 @@ li.stack strong { color: var(--text); font-size: 0.85rem; }
 .project-card h3 { font-size: 1.1rem; margin-bottom: 0.3rem; }
 .project-card .desc { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 1.2rem; }
 
-/* snake game */
-.snake-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-.snake-hud {
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.88rem;
-    color: var(--text-dim);
-}
-.snake-hud .score-val { color: var(--green); font-weight: 700; font-size: 1.1rem; font-family: var(--mono); }
-
-#snake-canvas {
-    display: block;
-    background: #0b0e14;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-}
-
-.snake-controls { display: flex; gap: 0.75rem; }
-
 .btn {
     background: var(--accent-dim);
     color: var(--accent);
@@ -193,4 +167,9 @@ li.stack strong { color: var(--text); font-size: 0.85rem; }
 }
 .btn:hover { background: var(--accent); color: #fff; }
 
-.snake-hint { font-size: 0.8rem; color: var(--text-dim); }
+#maze-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
