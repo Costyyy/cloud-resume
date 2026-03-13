@@ -157,8 +157,8 @@ resource "aws_lambda_function" "visitor_counter" {
 # Maze widget
 data "archive_file" "maze_zip" {
   type        = "zip"
-  source_dir  = "../maze-generator"
-  output_path = "../maze-generator/maze.zip"
+  source_dir  = "../maze-gen"
+  output_path = "../maze-gen/maze.zip"
 }
 
 resource "aws_lambda_function" "maze_generator" {

@@ -14,7 +14,7 @@
         <div class="views">
         <p>Page Views: <span id="visitor-count">-</span></p>
     </div>
-    
+
     <div class="nav-tabs">
         <button class="nav-tab active" onclick="switchTab('cv', this)">CV</button>
         <button class="nav-tab" onclick="switchTab('projects', this)">Projects</button>
@@ -178,17 +178,16 @@
 <div class="projects-container">
 
     <h1>Projects</h1>
-    <p class="subtitle">Personal experiments and side builds.</p>
+    <p class="subtitle">Personal experiments and side builds. (Work in Progress)</p>
 
     <div class="project-card">
-        <h3>Snake</h3>
-        <p class="desc">Classic Snake — arrow keys to move. This started as a neural networks class project.</p>
+        <h3>Maze Generator</h3>
+        <p class="desc">Widget made to test how to integrate dynamic widgets made with python into a webpage.</p>
 
-        <!-- TODO-->
-        <div id="game-container">
-
+        <div id="maze-container">
+            <div id="maze-output">Loading...</div>
+            <button class="btn" onclick="loadMaze()">Generate new maze</button>
         </div>
-
     </div>
 
 </div>
@@ -202,6 +201,16 @@ function switchTab(name, btn) {
     btn.classList.add('active');
     window.scrollTo(0, 0);
 }
+
+function loadMaze() {
+    document.getElementById("maze-output").innerHTML = "Generating...";
+    fetch("https://bbmq6uc1j3.execute-api.eu-north-1.amazonaws.com/maze")
+        .then(r => r.text())
+        .then(svg => { document.getElementById("maze-output").innerHTML = svg; })
+        .catch(() => { document.getElementById("maze-output").textContent = "Failed to load."; });
+}
+
+loadMaze();
 
 fetch("https://bbmq6uc1j3.execute-api.eu-north-1.amazonaws.com/count")
     .then(r => r.json())
