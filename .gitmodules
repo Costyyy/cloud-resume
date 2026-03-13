@@ -1,0 +1,3 @@
+[submodule "maze-gen"]
+	path = maze-gen
+	url = https://github.com/Costyyy/maze-gen.git

@@ -154,6 +154,41 @@ resource "aws_lambda_function" "visitor_counter" {
   reserved_concurrent_executions = 5
 }
 
+# Maze widget
+data "archive_file" "maze_zip" {
+  type        = "zip"
+  source_dir  = "../maze-generator"
+  output_path = "../maze-generator/maze.zip"
+}
+
+resource "aws_lambda_function" "maze_generator" {
+  function_name    = "maze-generator"
+  role             = aws_iam_role.lambda_role.arn
+  handler          = "lambda_function.lambda_handler"
+  runtime          = "python3.12"
+  filename         = data.archive_file.maze_zip.output_path
+  source_code_hash = data.archive_file.maze_zip.output_base64sha256
+}
+
+resource "aws_apigatewayv2_route" "maze" {
+  api_id    = aws_apigatewayv2_api.visitor_counter.id
+  route_key = "GET /maze"
+  target    = "integrations/${aws_apigatewayv2_integration.maze.id}"
+}
+
+resource "aws_apigatewayv2_integration" "maze" {
+  api_id           = aws_apigatewayv2_api.visitor_counter.id
+  integration_type = "AWS_PROXY"
+  integration_uri  = aws_lambda_function.maze_generator.invoke_arn
+}
+
+resource "aws_lambda_permission" "maze_api_gateway" {
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.maze_generator.function_name
+  principal     = "apigateway.amazonaws.com"
+  source_arn    = "${aws_apigatewayv2_api.visitor_counter.execution_arn}/*/*"
+}
+
 # API Gateway
 resource "aws_apigatewayv2_api" "visitor_counter" {
   name          = "visitor-counter-api"
