@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Run Lambda tests
+        run: pytest backend/
+
       - name: Checkout code
         uses: actions/checkout@v4
 
