@@ -3,176 +3,210 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Constantin Suruniuc - CV</title>
+    <title>Constantin Suruniuc</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
 
-        <header>
-            <h1>Constantin Suruniuc</h1>
-            <p>
-                <a href="tel:+40729599663">+40 729 599 663</a> |
-                <a href="mailto:costy.suruniuc@gmail.com">costy.suruniuc@gmail.com</a> |
-                Iași, România |
-                <a href="https://linkedin.com/in/constantin-suruniuc-393570182" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/Costyyy" target="_blank">GitHub</a> |
-                <a href="https://d2u6bf6755ez4c.cloudfront.net/" target="_blank">This Website</a>
-            </p>
-        </header>
-
-        <section>
-            <h2>Summary</h2>
-            <p>
-                Software developer with 5+ years of experience across automation tooling, data
-                pipelines, and developer infrastructure, mostly in Python and C++. I tend to pick
-                things up fast and have moved between quite different problem spaces throughout my
-                career, rule engine design, data transformation, ML prototyping, and most recently
-                LLM-based code generation.
-            </p>
-        </section>
-
-        <section>
-            <h2>Experience</h2>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <span><strong>Bitarcon</strong> - Software Developer</span>
-                    <span>Iași, Romania,  Oct 2025 - Present</span>
-                </div>
-                <ul>
-                    <li>Working on AI-assisted developer tooling that automates generation of structured test cases, cutting down manual authoring time considerably.</li>
-                    <li>Built Python tooling to parse domain-specific specification files, extract relevant data, and pass it into an LLM-based generation pipeline.</li>
-                    <li>Own the tooling design end-to-end within a small team, from initial architecture through to implementation.</li>
-                    <li class="stack"><strong>Stack:</strong> Python, Flask, pytest, numpy, Git</li>
-                </ul>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <span><strong>Forvia Hella</strong> - Software Developer</span>
-                    <span>Iași, Romania, May 2024 - Sep 2025</span>
-                </div>
-                <ul>
-                    <li>Main developer on a configurable signal logging tool, where users can define recording rules using a structured logic system.</li>
-                    <li>Built a chainable rule engine that supports complex multi-signal conditions.</li>
-                    <li>Added new logical operators, report export functionality, and UX improvements; also worked through a backlog of existing bugs.</li>
-                    <li>Built and maintained cross-platform desktop UIs with Qt.</li>
-                    <li class="stack"><strong>Stack:</strong> C++, Python, Qt, CMake, Git</li>
-                </ul>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <span><strong>Alten DC</strong> - Software Developer</span>
-                    <span>Iași, Romania, May 2022 - May 2024</span>
-                </div>
-                <ul>
-                    <li>Wrote Python scripts that automated test framework migration, cutting the process time by around 50%.</li>
-                    <li>Managed containerized development and test environments using Docker.</li>
-                    <li>Wrote and maintained unit and integration tests with GTest to keep coverage targets in check.</li>
-                    <li>Helped onboard two interns, getting them up to speed on the codebase and working independently within a few weeks.</li>
-                    <li class="stack"><strong>Stack:</strong> Python, C++, Docker, GTest, Git</li>
-                </ul>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <span><strong>Continental</strong> - Software Developer</span>
-                    <span>Iași, Romania, Jun 2021 - May 2022</span>
-                </div>
-                <ul>
-                    <li>Developed and maintained C++ software for ADAS automated parking systems shipping in production vehicles.</li>
-                    <li>Dug into vehicle test data to track down and fix behavioural defects in ADAS algorithms.</li>
-                    <li class="stack"><strong>Stack:</strong> C++, GTest, Visual Studio, Git</li>
-                </ul>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <span><strong>Continental</strong> - Software Engineering Intern</span>
-                    <span>Iași, Romania, Jul 2020 - Jun 2021</span>
-                </div>
-                <ul>
-                    <li>Worked on a Driver Monitoring System using neural networks to detect fatigue and distraction in real time.</li>
-                    <li>Used pandas to process and visualise model outputs, feeding results back into the evaluation loop.</li>
-                    <li class="stack"><strong>Stack:</strong> Python, TensorFlow, pandas, Git</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Technologies</h2>
-            <p><strong>Languages:</strong> Python, C++, SQL</p>
-            <p><strong>Frameworks &amp; Libraries:</strong> Qt, Flask, TensorFlow, pandas, numpy, pytest, GTest</p>
-            <p><strong>Tools &amp; Platforms:</strong> Docker, Git, CMake, Linux, GitHub Copilot</p>
-            <p><strong>Cloud &amp; Infrastructure:</strong> AWS (S3, CloudFront, Lambda, DynamoDB, API Gateway), Terraform, GitHub Actions</p>
-        </section>
-
-        <section>
-            <h2>Projects</h2>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <span><strong>Cloud-Hosted Resume with Serverless Backend</strong> <em>(personal)</em></span>
-                    <span>2026</span>
-                </div>
-                <ul>
-                    <li>Built and deployed a personal CV site on AWS using S3 for static hosting, CloudFront for HTTPS delivery, and a serverless visitor counter backed by API Gateway, Lambda, and DynamoDB.</li>
-                    <li>Defined all infrastructure as code in Terraform, enabling reproducible deployments across environments.</li>
-                    <li>Automated deployments with a GitHub Actions CI/CD pipeline that runs tests, applies Terraform changes, and invalidates the CloudFront cache on every push to main.</li>
-                    <li class="stack"><strong>Stack:</strong> AWS (S3, CloudFront, Lambda, DynamoDB, API Gateway), Terraform, GitHub Actions, Python, pytest</li>
-                </ul>
-            </div>
-
-            <div class="entry">
-                <div class="entry-header">
-                    <span><strong>Snake-Playing Neural Network</strong> <em>(personal)</em></span>
-                    <span>2020</span>
-                </div>
-                <ul>
-                    <li>Trained a neuroevolution agent to play Snake, watching it improve across generations - a side project to get hands-on with evolutionary ML.</li>
-                    <li class="stack"><strong>Stack:</strong> Python, TensorFlow</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <div class="entry">
-                <div class="entry-header">
-                    <span><strong>Alexandru Ioan Cuza University of Iași</strong> - Computer Science</span>
-                    <span>2018 - 2022</span>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Certifications</h2>
-            <div class="entry">
-                <div class="entry-header">
-                    <span><strong>C1 Advanced English (CAE)</strong> - Score: 197/210</span>
-                    <span>Cambridge Assessment English - Nov 2021</span>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <p class="visitor-count">
-                Views: <span id="visitor-count">-</span>
-            </p>
-        </footer>
+<nav>
+    <span class="nav-name">Constantin Suruniuc</span>
+    <div class="nav-tabs">
+        <button class="nav-tab active" onclick="switchTab('cv', this)">CV</button>
+        <button class="nav-tab" onclick="switchTab('projects', this)">Projects</button>
     </div>
-    <script>
-        const API_URL = "https://bbmq6uc1j3.execute-api.eu-north-1.amazonaws.com/count";
+</nav>
 
-        fetch(API_URL)
-            .then(r => r.json())
-            .then(data => {
-                document.getElementById("visitor-count").textContent = data.count;
-            })
-            .catch(() => {
-                document.getElementById("visitor-count").textContent = "-";
-            });
-    </script>
+<!-- CV page -->
+<div id="page-cv" class="page active">
+<div class="cv-container">
+
+    <div class="cv-header">
+        <h1>Constantin Suruniuc</h1>
+        <div class="contact">
+            <a href="tel:+40729599663">+40 729 599 663</a>
+            <a href="mailto:costy.suruniuc@gmail.com">costy.suruniuc@gmail.com</a>
+            <span>Iași, România</span>
+            <a href="https://linkedin.com/in/constantin-suruniuc-393570182" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Costyyy" target="_blank">GitHub</a>
+            <a href="https://d2u6bf6755ez4c.cloudfront.net/" target="_blank">CV Website</a>
+        </div>
+    </div>
+
+    <div class="cv-section">
+        <h2>Summary</h2>
+        <p>Software developer with 5+ years of experience across automation tooling, data pipelines, and developer infrastructure, mostly in Python and C++. I tend to pick things up fast and have moved between quite different problem spaces throughout my career, rule engine design, data transformation, ML prototyping, and most recently LLM-based code generation.</p>
+    </div>
+
+    <div class="cv-section">
+        <h2>Experience</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="role">Bitarcon - Software Developer</span>
+                <span class="date">Iași, Romania, Oct 2025 - Present</span>
+            </div>
+            <ul>
+                <li>Working on AI-assisted developer tooling that automates generation of structured test cases, cutting down manual authoring time considerably.</li>
+                <li>Built Python tooling to parse domain-specific specification files, extract relevant data, and pass it into an LLM-based generation pipeline.</li>
+                <li>Own the tooling design end-to-end within a small team, from initial architecture through to implementation.</li>
+                <li class="stack"><strong>Stack:</strong> <span>Python, Flask, pytest, numpy, Git</span></li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="role">Forvia Hella - Software Developer</span>
+                <span class="date">Iași, Romania, May 2024 - Sep 2025</span>
+            </div>
+            <ul>
+                <li>Main developer on a configurable signal logging tool, where users can define recording rules using a structured logic system.</li>
+                <li>Built a chainable rule engine that supports complex multi-signal conditions.</li>
+                <li>Added new logical operators, report export functionality, and UX improvements; also worked through a backlog of existing bugs.</li>
+                <li>Built and maintained cross-platform desktop UIs with Qt.</li>
+                <li class="stack"><strong>Stack:</strong> <span>C++, Python, Qt, CMake, Git</span></li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="role">Alten DC - Software Developer</span>
+                <span class="date">Iași, Romania, May 2022 - May 2024</span>
+            </div>
+            <ul>
+                <li>Wrote Python scripts that automated test framework migration, cutting the process time by around 50%.</li>
+                <li>Managed containerized development and test environments using Docker.</li>
+                <li>Wrote and maintained unit and integration tests with GTest to keep coverage targets in check.</li>
+                <li>Helped onboard two interns, getting them up to speed on the codebase and working independently within a few weeks.</li>
+                <li class="stack"><strong>Stack:</strong> <span>Python, C++, Docker, GTest, Git</span></li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="role">Continental - Software Developer</span>
+                <span class="date">Iași, Romania, Jun 2021 - May 2022</span>
+            </div>
+            <ul>
+                <li>Developed and maintained C++ software for ADAS automated parking systems shipping in production vehicles.</li>
+                <li>Dug into vehicle test data to track down and fix behavioural defects in ADAS algorithms.</li>
+                <li class="stack"><strong>Stack:</strong> <span>C++, GTest, Visual Studio, Git</span></li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="role">Continental - Software Engineering Intern</span>
+                <span class="date">Iași, Romania, Jul 2020 - Jun 2021</span>
+            </div>
+            <ul>
+                <li>Worked on a Driver Monitoring System using neural networks to detect fatigue and distraction in real time.</li>
+                <li>Used pandas to process and visualise model outputs, feeding results back into the evaluation loop.</li>
+                <li class="stack"><strong>Stack:</strong> <span>Python, TensorFlow, pandas, Git</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cv-section">
+        <h2>Technologies</h2>
+        <div class="tech-grid">
+            <span class="tech-label">Languages</span>
+            <span class="tech-value">Python, C++, SQL</span>
+            <span class="tech-label">Frameworks &amp; Libraries</span>
+            <span class="tech-value">Qt, Flask, TensorFlow, pandas, numpy, pytest, GTest</span>
+            <span class="tech-label">Tools &amp; Platforms</span>
+            <span class="tech-value">Docker, Git, CMake, Linux, GitHub Copilot</span>
+            <span class="tech-label">Cloud &amp; Infrastructure</span>
+            <span class="tech-value">AWS (S3, CloudFront, Lambda, DynamoDB, API Gateway), Terraform, GitHub Actions</span>
+        </div>
+    </div>
+
+    <div class="cv-section">
+        <h2>Projects</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="role">Cloud-Hosted Resume with Serverless Backend <em style="font-weight:400;color:var(--text-dim)">(personal)</em></span>
+                <span class="date">2026</span>
+            </div>
+            <ul>
+                <li>Built and deployed a personal CV site on AWS using S3, CloudFront, and a serverless visitor counter backed by API Gateway, Lambda, and DynamoDB.</li>
+                <li>Defined all infrastructure as code in Terraform, enabling reproducible deployments across environments.</li>
+                <li>Automated deployments with a GitHub Actions CI/CD pipeline that runs tests, applies Terraform changes, and invalidates the CloudFront cache on every push to main.</li>
+                <li class="stack"><strong>Stack:</strong> <span>AWS (S3, CloudFront, Lambda, DynamoDB, API Gateway), Terraform, GitHub Actions, Python, pytest</span></li>
+            </ul>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="role">Snake-Playing Neural Network <em style="font-weight:400;color:var(--text-dim)">(personal)</em></span>
+                <span class="date">2020</span>
+            </div>
+            <ul>
+                <li>Trained a neuroevolution agent to play Snake, watching it improve across generations.</li>
+                <li class="stack"><strong>Stack:</strong> <span>Python, TensorFlow</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cv-section">
+        <h2>Education</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="role">Alexandru Ioan Cuza University of Iași Computer Science</span>
+                <span class="date">2018 - 2022</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cv-section">
+        <h2>Certifications</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="role">C1 Advanced English (CAE) - Score: 197/210</span>
+                <span class="date">Cambridge Assessment English, Nov 2021</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cv-footer">
+        <p>Views: <span id="visitor-count">...</span></p>
+    </div>
+
+</div>
+</div>
+
+<!-- Projects page -->
+<div id="page-projects" class="page">
+<div class="projects-container">
+
+    <h1>Projects</h1>
+    <p class="subtitle">Personal experiments and side builds.</p>
+
+    <div class="project-card">
+        <h3>Snake</h3>
+        <p class="desc">Classic Snake — arrow keys to move. This started as a neural networks class project.</p>
+
+        <!-- TODO-->
+        <div id="game-container">
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<script>
+function switchTab(name, btn) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
+    document.getElementById('page-' + name).classList.add('active');
+    btn.classList.add('active');
+    window.scrollTo(0, 0);
+}
+
+fetch("https://bbmq6uc1j3.execute-api.eu-north-1.amazonaws.com/count")
+    .then(r => r.json())
+    .then(data => { document.getElementById("visitor-count").textContent = data.count; })
+    .catch(() => { document.getElementById("visitor-count").textContent = "unavailable"; });
+</script>
 </body>
 </html>
