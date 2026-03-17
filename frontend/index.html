@@ -39,7 +39,7 @@
 
     <div class="cv-section">
         <h2>Summary</h2>
-        <p>Software developer with 5\,+ years of experience across automation tooling, data pipelines, and developer infrastructure, mostly in Python and C\,++. I pick up new technologies quickly and I am always up for learning new skills and improving existent ones.</p>
+        <p>Software developer with 5+ years of experience in Python and C++, mostly building tooling, automation systems, and desktop applications.</p>
     </div>
 
     <div class="cv-section">
@@ -51,9 +51,9 @@
                 <span class="date">Iași, Romania, Oct 2025 - Present</span>
             </div>
             <ul>
-                <li>Working on AI-assisted developer tooling that automates generation of structured test cases, cutting down manual authoring time considerably.</li>
+                <li>Working on AI-assisted developer tooling that automates generation of structured test cases, cutting down manual authoring time.</li>
                 <li>Built Python tooling to parse domain-specific specification files, extract relevant data, and pass it into an LLM-based generation pipeline.</li>
-                <li>Own the tooling design end-to-end within a small team, from initial architecture through to implementation.</li>
+                <li>Own the tooling design end-to-end within a small team, from architecture to implementation.</li>
                 <li class="stack"><strong>Stack:</strong> <span>Python, Flask, pytest, numpy, Git</span></li>
             </ul>
         </div>
@@ -81,7 +81,7 @@
                 <li>Wrote Python scripts that automated test framework migration, cutting the process time by around 50%.</li>
                 <li>Managed containerized development and test environments using Docker.</li>
                 <li>Wrote and maintained unit and integration tests with GTest to keep coverage targets in check.</li>
-                <li>Helped onboard two interns, getting them up to speed on the codebase and working independently within a few weeks.</li>
+                <li>Helped onboard interns, getting them up to speed on the codebase and working independently within a few weeks.</li>
                 <li class="stack"><strong>Stack:</strong> <span>Python, C++, Docker, GTest, Git</span></li>
             </ul>
         </div>
@@ -104,9 +104,11 @@
                 <span class="date">Iași, Romania, Jul 2020 - Jun 2021</span>
             </div>
             <ul>
-                <li>Worked on a Driver Monitoring System using neural networks to detect fatigue and distraction in real time.</li>
-                <li>Used pandas to process and visualise model outputs, feeding results back into the evaluation loop.</li>
-                <li class="stack"><strong>Stack:</strong> <span>Python, TensorFlow, pandas, Git</span></li>
+                <li>Developed core computer vision modules for a Driver Monitoring System to detect real-time fatigue and distraction using Python and OpenCV.</li>
+                <li>Implemented head pose estimation by mapping 2D facial landmarks to a 3D model, applying cv2.solvePnP to calculate pitch, yaw, and roll angles.</li>
+                <li>Built a gaze tracking and blink detection engine leveraging dlib shape predictors and MTCNN to isolate eye regions and calculate aspect ratios.</li>
+                <li>Processed, visualized, and evaluated tracking outputs using pandas and NumPy, creating a continuous feedback loop for model refinement.</li>
+                <li class="stack"><strong>Stack:</strong> <span>Python, OpenCV, dlib, MTCNN, NumPy, pandas, Git</span></li>
             </ul>
         </div>
     </div>
@@ -115,13 +117,12 @@
         <h2>Technologies</h2>
         <div class="tech-grid">
             <span class="tech-label">Languages</span>
-            <span class="tech-value">Python, C++, SQL</span>
+            <span class="tech-value">Python, C++</span>
             <span class="tech-label">Frameworks &amp; Libraries</span>
-            <span class="tech-value">Qt, Flask, TensorFlow, pandas, numpy, pytest, GTest</span>
+            <span class="tech-value">Qt, Flask, pytest, GTest, pandas, numpy</span>
             <span class="tech-label">Tools &amp; Platforms</span>
-            <span class="tech-value">Docker, Git, CMake, Linux, GitHub Copilot</span>
-            <span class="tech-label">Cloud &amp; Infrastructure</span>
-            <span class="tech-value">AWS (S3, CloudFront, Lambda, DynamoDB, API Gateway), Terraform, GitHub Actions</span>
+            <span class="tech-value">Docker, Git, CMake, Linux</span>
+
         </div>
     </div>
 
@@ -133,7 +134,7 @@
                 <span class="date">2026</span>
             </div>
             <ul>
-                <li>Built and deployed a personal CV site on AWS using S3, CloudFront, and a serverless visitor counter backed by API Gateway, Lambda, and DynamoDB.</li>
+                <li>Built and deployed a personal CV site on AWS using S3 for static hosting, CloudFront for HTTPS delivery, and a serverless visitor counter backed by API Gateway, Lambda, and DynamoDB.</li>
                 <li>Defined all infrastructure as code in Terraform, enabling reproducible deployments across environments.</li>
                 <li>Automated deployments with a GitHub Actions CI/CD pipeline that runs tests, applies Terraform changes, and invalidates the CloudFront cache on every push to main.</li>
                 <li class="stack"><strong>Stack:</strong> <span>AWS (S3, CloudFront, Lambda, DynamoDB, API Gateway), Terraform, GitHub Actions, Python, pytest</span></li>
@@ -141,26 +142,16 @@
         </div>
         <div class="entry">
             <div class="entry-header">
-                <span class="role">Password Manager with Encryption <em style="font-weight:400;color:var(--text-dim)">(personal)</em></span>
+                <span class="role">Password Manager with Encryption &amp; Integrity Checks <em style="font-weight:400;color:var(--text-dim)">(personal)</em></span>
                 <span class="date">2026</span>
             </div>
             <ul>
                 <li>Built a local password manager with ChaCha20-Poly1305 encryption, key derivation using Argon2, and Merkle tree-based integrity verification to detect tampering.</li>
                 <li>Designed a clean separation of concerns: database abstraction, cryptographic operations, and a CLI interface using argparse.</li>
-                <li>Automated deployments with a GitHub Actions CI/CD pipeline that runs tests, applies Terraform changes, and invalidates the CloudFront cache on every push to main.</li>
                 <li class="stack"><strong>Stack:</strong> <span>Python, SQLite, cryptography library.</span></li>
             </ul>
         </div>
-        <div class="entry">
-            <div class="entry-header">
-                <span class="role">Snake-Playing Neural Network <em style="font-weight:400;color:var(--text-dim)">(personal)</em></span>
-                <span class="date">2020</span>
-            </div>
-            <ul>
-                <li>Trained a neuroevolution agent to play Snake, watching it improve across generations.</li>
-                <li class="stack"><strong>Stack:</strong> <span>Python, TensorFlow</span></li>
-            </ul>
-        </div>
+
     </div>
 
     <div class="cv-section">
