@@ -145,7 +145,7 @@
                 <span class="date">2026</span>
             </div>
             <ul>
-                <li>Built a local password manager with AES-GCM encryption, key derivation using Argon2, and Merkle tree-based integrity verification to detect tampering.</li>
+                <li>Built a local password manager with ChaCha20-Poly1305 encryption, key derivation using Argon2, and Merkle tree-based integrity verification to detect tampering.</li>
                 <li>Designed a clean separation of concerns: database abstraction, cryptographic operations, and a CLI interface using argparse.</li>
                 <li>Automated deployments with a GitHub Actions CI/CD pipeline that runs tests, applies Terraform changes, and invalidates the CloudFront cache on every push to main.</li>
                 <li class="stack"><strong>Stack:</strong> <span>Python, SQLite, cryptography library.</span></li>
